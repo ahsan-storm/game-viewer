@@ -1,33 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game-type-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20;
 }
 
-.App-link {
-  color: #61dafb;
+.game-type-input-group {
+  width: 50% !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button { 
+  margin-left: 20px;
+}
+
+.game-information-section { 
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.685);
+}
+
+.app {
+  margin-top: 100px;
+}
+
+.primary-heading { 
+  font-size: 2.0rem;
+}
+
+.secondary-heading {
+  font-size:1.2rem;
+}
+
+.margin-balance {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.race-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.race-card-body {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.race-card-margin {
+  margin-bottom: 35px;
+}
+
+.start-card-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.starts-table-column {
+  width: 33%;
+}
+
+.more-info-table-column {
+  width: 50%;
+}
+
+.game-type-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
