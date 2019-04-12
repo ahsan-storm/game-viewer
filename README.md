@@ -11,7 +11,7 @@ First of all clone the project by the command:
 git clone https://github.com/ahsan-storm/game-viewer.git
 ```
 
-The api endpoints required in this project are CORS enabled. To bypass and use it this application there are two solutions:
+The api endpoints required in this project are CORS enabled. To bypass and use them in this project there are two solutions:
 
 ### First Solution (Docker)
 
@@ -26,7 +26,7 @@ After installing run `docker-v`to verify the intalltion is succesful. Now run th
 docker run -d --name cors-anywhere -p 30080:80 yasinuslu/cors-anywhere
 ```
 
-This will run a local proxy server. To verify run `docker ps` in your terminal and a container should be running with name `cors-anywhere`. This is the default method used in this project, as it is safer to run our own server instead of relying on some third party server.
+This will run a local proxy server. To verify run `docker ps` in your terminal and a container should be running with name `cors-anywhere`. This is the default solution used in this project, as it is safer to run our own server instead of relying on some third party server.
 
 ### Second Solution (Third Party Public Server)
 
@@ -41,7 +41,7 @@ Change the constant PROXY_HOST to https://cors-anywhere.herokuapp.com/
 Open the cloned project and run `npm install` to download the required dependencies
 
 ### Run Project
-Run `npm start`. This will run the project on `http://localhost:3000` by default
+Run `npm start`. This will run the project on `http://localhost:3000` by default. Make sure you have followed the above steps, and have applied one of the solutions for setting up `cors-proxy`
 
 ### Lint Code
 Run `npx eslint src` to lint everything inside `src` directory
